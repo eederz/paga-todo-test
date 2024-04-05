@@ -1,6 +1,5 @@
 import List from "./components/List";
 import fetchBankList from "../app/libs/getBankList";
-import SearchBar from "./components/SearchBar";
 
 export default async function Home() {
   const bankData = await fetchBankList();

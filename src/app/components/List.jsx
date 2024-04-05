@@ -97,6 +97,9 @@ const List = ({ bankData }) => {
                 );
               })}
           </div>
+          {
+            bankList.length === 0 &&<section className="font-bold text-blue-600">Por el momento no hay elementos para mostrar</section>
+          }
         </div>
       </section>
     </main>
