@@ -51,16 +51,16 @@ const List = ({ bankData }) => {
     <main>
       <section className="flex items-center justify-center mb-10">
         <div className="">
-          <label htmlFor="searchBank">Search Bank</label>
+          <label className="" htmlFor="searchBank">Search Bank</label>
           <input
             id="searchBank"
             type="search"
-            className="mr-20 ml-5 font-medium hover:text-gray-900 bg-blue-100 border-2 border-blue-900"
+            className="mr-10 ml-5 font-medium hover:text-gray-900 bg-blue-100 border-2 border-blue-900"
             onChange={(event) => setSearch(event.target.value)}
           ></input>
         </div>
-        <div className="">
-          <div class>
+        <div className=" flex flex-col item-center justify-center">
+          <div>
             <a className="mr-2">Sort Bank List:</a>
             <button
               className="border-2 border-gray-300 px-1 py-1 rounded-md mr-2"
