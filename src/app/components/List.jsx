@@ -49,9 +49,9 @@ const List = ({ bankData }) => {
 
   return (
     <main>
-      <section className="flex items-center justify-center mb-10">
-        <div className="">
-          <label className="" htmlFor="searchBank">Search Bank</label>
+      <section className="flex flex-col md:flex-row items-center justify-center mb-10">
+        <p className="">Search Bank</p>
+        <div className="mb-5">
           <input
             id="searchBank"
             type="search"
@@ -59,9 +59,9 @@ const List = ({ bankData }) => {
             onChange={(event) => setSearch(event.target.value)}
           ></input>
         </div>
-        <div className=" flex flex-col item-center justify-center">
+        <div className="mb-5">
           <div>
-            <a className="mr-2">Sort Bank List:</a>
+            <a className="mr-2">Sort Bank List</a>
             <button
               className="border-2 border-gray-300 px-1 py-1 rounded-md mr-2"
               onClick={handleSortBankListAs}
