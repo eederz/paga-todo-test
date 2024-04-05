@@ -56,7 +56,7 @@ const List = ({ bankData }) => {
             id="searchBank"
             type="search"
             className="mr-10 ml-5 font-medium hover:text-gray-900 bg-blue-100 border-2 border-blue-900"
-            onChange={(event) => setSearch(event.target.value)}
+            onChange={(event) => setSearch(event.target.value.toLocaleLowerCase())}
           ></input>
         </div>
         <div className="mb-5">
